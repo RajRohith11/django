@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKY BIRDS</title>
+    <link rel="stylesheet" href="./reastaurent.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    {% load static %}
+    <style>
+        .one{
+            display: flex;
+            justify-content: space-between;
+            height: 10vh;
+        }
+        .divone:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .divtwo:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .divthree:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .divfour:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .swiggy{
+            width: 200px;
+            height: 70px;
+            object-fit: cover;
+            margin-left: 70px;
+        }
+        .r1{
+            height: 40px;
+            border-radius: 7px;
+            margin-bottom: 5px;
+        }
+        i{
+            color: rgb(250, 93, 20);
+        }
+        .pro{
+            width: 200px;
+            height: 70px;
+            object-fit: contain;
+            margin-right: 50px;
+            margin-top: 0px;
+        }
+        body{
+            width: 100%;
+        }
+        .code{
+            position: absolute;
+            margin-top: 1px;
+            left: 320px;
+            top: 3px;
+            color: gainsboro;
+        }
+        .two ,h1{
+        margin-left: 50px; 
+        }
+        .divone{
+            width:150px;
+            text-align: center;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .divtwo{
+            width:150px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .two{
+            display: flex;
+            gap: 150px;
+        }
+        .divthree{
+            width:150px;
+            text-align: right;
+            margin-top: 40px;
+        }
+        .divfour{
+            width:50px;
+            text-align: right;
+            margin-top: 40px;
+            text-align: center;
+            width: 150px;
+        }
+        .three{
+            height: 60vh;
+            display: flex;
+            gap: 30px;
+            margin-left: 200px;
+    
+        }
+        .card1{
+        height: 60vh;
+        width: 25%;
+        }
+    
+        .card2{
+            height: 60vh;
+            width: 25%;
+            }
+            .card3{
+                height: 60vh;
+                width: 25%;
+                }    
+        .fil{
+            display: flex;
+            gap: 10px ;
+            margin-left: 250px;
+    
+        }
+        .but{
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid gray;
+            padding: 5px;
+    
+        }
+        .puma1{
+            width: 20%;
+            height: 40vh;
+            margin-top: 40px;
+            margin-left: 90px;
+    
+        }
+        .puma{
+            display: flex;
+            width: 100%;
+            height: 24vh;
+            gap: 30px;
+        }
+        .puma2{
+            width: 20%;
+            height: 40vh;
+            margin-top: 40px;
+    
+        }
+        .puma3{
+            width: 20%;
+            height: 40vh;
+            margin-top: 40px;
+    
+        }
+        .puma4{
+            width: 20%;
+            height: 40vh;
+            margin-top: 40px;
+            margin-right: 20px;
+    
+        }
+        .rohith{
+            display: flex;
+            margin-top: 10%;
+            gap: 30px;
+    
+        }
+        .don{
+            display: flex;
+            gap: 30px;
+        }
+        .niki{
+            margin-top: 30px;
+            margin-left: 550px;
+            background-color: white;
+            border: 1px solid lightslategray;
+    
+        }
+        .def{
+            border: 1px solid lightslategray;
+            padding: 15px;
+            margin-top: 3%;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-radius: 15px;
+        }
+        .cen{
+            width: 100%;
+            margin-left: 50px;
+        }
+        .cen2{
+            margin-left: 90px;
+            padding: 6px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+            background-color: white;
+            height: 50px;
+        }
+        .cen2:hover{
+            cursor: pointer;
+        }
+    
+        
+        .cen3{
+            margin-left: 50px;
+            padding: 6px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+            background-color: white;
+            gap: 10px;
+            height: 50px;
+        }
+        .cen4{
+            margin-left: 50px;
+            padding: 6px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+            background-color: white;
+            height: 50px;
+        }
+        .cen5{
+            margin-left: 90px;
+            padding: 6px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+            background-color: white;
+            margin-top: 2%;
+            height: 50px;
+        }
+        .cen6{
+            margin-left: 50px;
+            padding: 6px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+            background-color: white;
+            height: 50px;
+        }
+        .cen7{
+            margin-left: 50px;
+            padding: 6px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+            background-color: white;
+            height: 50px;
+            
+        }
+        .cen9{
+            margin-left: 50px;
+            padding: 6px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+            background-color: white;
+            height: 50px;
+            
+        }
+        .cen8{
+            margin-left: 90px;
+            padding: 6px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+            background-color: white;
+            margin-top: 2%;
+            height: 50px;
+            
+        }
+        .cen10{
+            margin-left: 50px;
+            padding: 6px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+            background-color: white;
+            height: 50px;
+            
+        }
+        .wig{
+            margin-top: 4%;
+            margin-left: 50px;
+        }
+    
+        .final{
+            display: flex;
+            height: 30vh;
+            justify-content: space-between;
+        }
+        .fone{
+            height: 80vh;
+            width: 130px;
+            margin-left: 250px;
+        }
+        .na{
+            margin-top: 30px;
+        }
+        .fot{
+            background-color : rgb(218, 218, 218);
+            height: 120vh;
+            margin-top: 50px;
+        }
+        .con{
+            width: 100px;
+            height: 40vh;
+            position: absolute;
+            top: 3400px;
+            margin-left: 500px;
+        }
+        .con1{
+            width: 100px;
+            height: 40vh;
+            position: absolute;
+            top: 3400px;
+            margin-left: 650px;
+        }
+        .con2{
+            width: 100px;
+            height: 40vh;
+            position: absolute;
+            top: 3630px;
+            margin-left: 650px;
+        }
+        .con3{
+            width: 100px;
+            height: 40vh;
+            position: absolute;
+            top: 3400px;
+            margin-left: 850px;
+        }
+        .con4{
+            width: 140px;
+            height: 40vh;
+            position: absolute;
+            top: 3400px;
+            margin-left: 1050px;
+        }
+        .con5{
+            width: 100px;
+            height: 40vh;
+            position: absolute;
+            top: 3630px;
+            margin-left: 1050px;
+            width: 130px;
+        }
+        .pos{
+            position: absolute;
+            top: 3400px;
+            margin-left: 150px;
+        }
+        .bee{
+            position: absolute;
+            top: 3560px;
+            margin-left: 190px;
+            
+        }
+        .sem{
+            position: absolute;
+            top: 3900px;
+            margin-left: 190px;
+            width: 350px;
+        }
+        .APP{
+            position: absolute;
+            top: 3900px;
+            margin-left: 890px;
+            width: 350px;
+        }
+        .goo{
+            position: absolute;
+            top: 3900px;
+            margin-left: 590px;
+            width: 350px;
+        }
+        .puma4:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .puma3:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .puma2:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .puma1:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .card4:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .card2:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .card3:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .card1:hover{
+            scale: 0.9;
+            cursor: pointer;
+        }
+        .cen5:hover{
+            cursor: pointer;
+        }
+        .cen6:hover{
+            cursor: pointer;
+        }
+        .cen7:hover{
+            cursor: pointer;
+        }
+        .cen8:hover{
+            cursor: pointer;
+        }
+        .cen9:hover{
+            cursor: pointer;
+        }
+        .cen10:hover{
+            cursor: pointer;
+        }
+        .cen4:hover{
+            cursor: pointer;
+        }
+        .cen3:hover{
+            cursor: pointer;
+        }
+        .sun:hover{
+            cursor: pointer;
+        }
+        .music:hover{
+            cursor: pointer;
+        }
+        .niki:hover{
+            cursor: pointer;
+        }
+        .but:hover{
+            cursor: pointer;
+            background-color: rgb(250, 93, 20) ;
+            scale: 1.2;
+            color: white;
+            transition: 800ms;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light --bs-body-bg">
+        <div class="container-fluid">
+          {% comment %} <a class="navbar-brand" href="#">Navbar scroll</a> {% endcomment %}
+          <img src="{% static 'swiggy.jpg' %}" class="swiggy">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVICE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">HELP</a></li>
+                  <li><a class="dropdown-item" href="#">REPORTS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                {% comment %} <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a> {% endcomment %}
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <hr>
+    <div>
+        <img src="{% static 'grab2.jpg' %}" width="99%" height="400px" style="border-radius: 20px; margin-left: 5px; margin-right: 10px;">
+    </div>
+    
+        <h3 style="margin-left: 30px; margin-top:5%;">WHAT'S YOUR MAIND?</h3>
+        <div class="two">
+        <div class="divone" ><img src="{% static 'biriyani.png' %}" height="150px" style="text-align: center;">biriyani</div>
+        <div class="divtwo"><img src="{% static 'idli.png' %}" height="150px" style="text-align: center;"> South indian</div>
+        <div class="divthree"><img src="{% static 'veg.jpg' %}" height="150px" style="text-align: center;">PURE VEG</div>
+        <div class="divfour"><img src="{% static 'biriyani.png' %}" height="150px" style="text-align: center;">SOUTH INDIAN</div>
+    </div>
+    <div>
+    <h3 style="margin-left: 30px; margin-top: 5%;">Best Food Outlest Near Me</h3>
+</div>
+<div class="three">
+<div class="card1"><img src="{% static 'pizza.jpg!w700wp' %}" height="60%" width="100%" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px;border-top-right-radius: 10px;">
+<h3>PIZZA HUT</h3>
+<p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.=3 &emsp; 15-20 mins</p>
+<p style="color:#696666;"> South Indian, Chinese, Indian, North Indian, Chettinad, Biryani
+    Nenmeli</p>
+</div>
+<div class="card2"><img src="{% static "bur.jpg" %}" height="60%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+    <h3>BURGER KING</h3>
+    <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.2 &emsp; 20-25 mins</p>
+    <p style="color:#696666;"> Biryani, Chinese, North Indian, South Indian, Tandoor, Seafood
+        Sriperumbudur</p>
+</div>
+<div class="card3"><img src="{% static 'kfc.jpg' %}" height="60%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+    <h3>KFC</h3>
+    <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.5 &emsp; 10-15 mins</p>
+    <p style="color:#696666;"> Ice Cream, Desserts
+        Sriperumbudur
+        Bharath Restaurant
+        20% OFF UPTO ₹50
+        </p>
+</div>
+</div>
+<hr>
+<h3 style="margin-left: 30px; margin-top: 3%;">Popular Reastaurent Near Me</h3>
+<div class="fil">
+    <div ><button class="but" >Filter</button></div>
+    <div> <button class="but">Sort by </button></div>
+    <div><button class="but">Fast delivery</button></div>
+    <div><button class="but">New on swiggy</button></div>
+    <div><button class="but">Rating 4.0+</button></div>
+    <div><button class="but">Pure veg</button></div>
+    <div><button class="but">Offers</button></div>
+    <div><button class="but">Rs. 300 - Rs.600</button></div>
+    <div><button class="but">Less than Rs.300</button></div>
+</div>
+<div class="puma">
+    <div class="puma1"><img src="{% static 'puma11.webp' %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+    <h3>Chill 'N' Chill Restaurant</h3>
+    <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.2 &emsp; 15-20mins</p>
+    </div>
+    <div class="puma2"><img src="{% static 'puma2.jpg' %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <h3>Dhevar Hotel</h3>
+        <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.3 &emsp; 15-20mins</p>
+    </div>
+    <div class="puma3"><img src="{% static 'puma3.jpg' %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <h3>Bharath Restaurant</h3>
+        <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.4 &emsp; 20-25mins</p>
+    </div>
+    <div class="puma4"><img src="{% static 'puma4.jpg' %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <h3>BEST HOTEL</h3>
+        <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.1 &emsp; 10-15mins</p>
+    </div>
+  
+</div>
+<div class="rohith">
+    <div class="puma1"><img src="{% static 'gril.jpg' %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <h3>Bynona Restaurant
+        </h3>
+        <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.2 &emsp; 20-25mins</p>
+    </div>
+    <div class="puma2"><img src="{% static 'san.jpg' %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <h3>Royal kitchen</h3>
+        <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.2 &emsp; 20-25mins</p>
+    </div>
+    <div class="puma3"><img src="{% static "cofe.jpg" %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <h3>WE CHAI</h3>
+        <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.5 &emsp; 15-25mins</p>
+    </div>
+    <div class="puma4"><img src="{% static "pasta.jpg" %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <h3>HOURA BHAI </h3>
+        <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.7 &emsp; 10-25mins</p>
+    </div>
+</div>
+<div class="don">
+    <div class="puma1"><img src="{% static "ibaco2.avif" %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <h3>IBACO</h3>
+        <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.5 &emsp; 10-20mins</p>
+    </div>
+    <div class="puma2"><img src="{% static "coco.jpg" %}" height="65%" width="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <h3>COCO COLA</h3>
+        <p><i class="fas fa" style="color:green;">&#xf123;</i>&emsp;4.3 &emsp; 10-15mins</p>
+    </div>
+</div>
+<button class="niki" style="padding: 10px; width: 240px; color: rgb(250, 93, 20); border-radius: 7px;"  >Show More &emsp;<i class="fa fa" >	&#xf107;</i></button>
+<hr>
+<div class="def">
+    <dl>
+        <dt><h2>Finding The Best Restaurants Near Me</h2></dt>
+        <dd><p>While exploring a different city, it is important to know the best places to eat that capture the vibe and tastes of the city. When we search “best restaurant near me”, we get a list of restaurants that offer nothing but the best of food and experiences. The next step is to order the delicacy you want to try and get it delivered to your doorstep in no time.</p></dd>
+        <dd><p class="music" style="color: rgb(250, 93,20);">Show More &emsp;<i class="fa fa" >	&#xf107;</i></p></dd>
+    </dl>
+</div>
+<div class="cen">
+    <h3>Cuisine Restaurants Near Me</h3>
+    <div class="cen1">
+        <button class="cen2">Best Afghani Restaurants Near Me</button>
+        <button class="cen3 ">Best African Restaurants Near Me</button>
+        <button class="cen4">Best American Restaurants Near Me</button>
+        <button class="cen5">Best Andhra Restaurants Near Me</button>
+        <button class="cen6">Best Arabian Restaurants Near Me</button>
+        <button class="cen7">Best Asian Restaurants Near Me</button>
+        <button class="cen8">Best Assamese Restaurants Near Me</button>
+        <button class="cen9">Best Bengali Restaurants Near Me</button>
+        <button class="cen10"><p style="color: rgb(250, 93,20);">Show More &emsp;<i class="fa fa" >	&#xf107;</i></p></button>
+    </div>
+
+</div>
+<div class="wig">
+    <h3>Restaurent Chains Near Me</h3>
+    <div class="cen1">
+        <button  class="cen2" >Cake Zone</button>
+        <button class="cen3 ">The Good Bowl</button>
+        <button class="cen4">Taco Bell</button>
+        <button class="cen5">Bk Cafe</button>
+        <button class="cen6">Chinese Wok</button>
+        <button class="cen7">Indiana Burgers </button>
+        <button class="cen8">Keventers Ice  Cream</button>
+        <button class="cen9">The Dessert Heaven - Pure Veg </button>
+        <button class="cen10"><p style="color: rgb(250, 93,20);">Show More &emsp;<i class="fa fa" >	&#xf107;</i></p></button>
+    </div>
+</div>
+<footer class="fot">
+    <div class="con">
+        <h3>Company</h3>
+        <p>About Us</p>
+        <p>Swiggy Corporate</p>
+        <p>Careers</p>
+        <p>Team</p>
+        <p>Swiggy One</p>
+        <p>Swiggy Instamart</p>
+        <p>Swiggy Dineout</p>
+        <p>Swiggy Genie</p>
+    </div>
+    <div class="con1">
+        <h3>Contact us</h3>
+        <p>Help & Support</p>
+        <p>Partner with us</p>
+        <p>Ride with us</p>
+
+    </div>
+    <div class="con2">
+        <h3>Legal</h3>
+        <p>Terms & Conditions</p>
+        <p>Cokkie Policy</p>
+        <p>Privacy Policy</p>
+        <p>Investor Relations</p>
+    </div>
+    <div class="con3">
+        <h3>Available in:</h3>
+        <p>Bangalore</p>
+        <p>Gurgaon</p>
+        <p>Hyderabad</p>
+        <p>Delhi</p>
+        <p>Mumbai</p>
+        <p>Pune</p>
+        <p><button class="sun" style="border: 1px solid lightslategray; background-color: white; padding: 5px; border-radius: 10px; height: 29px;">589 cities &emsp;<i class="fa fa" style="color: black; height: 1px;"  >	&#xf107;</i></p> </button></p>
+    </div>
+    <div class="con4">
+        <h3>Life at Swiggy</h3>
+        <p>Explore with Swiggy</p>
+        <p>Swiggy News</p>
+        <p>Snackables</p>
+    </div>
+    <div class="con5">
+        <h3>Social Links</h3>
+        <p><i class="fas fa" style="color: black;">	&#xf08c;</i>&emsp;<i class="fas fa" style="color: black;">		&#xf16d;</i>&emsp;<i class="fas fa" style="color: black;">			&#xf09a;</i>&emsp;<i class="fas fa" style="color: black;">		&#xf0d3;	</i>&emsp;<i class="fas fa" style="color: black;">		&#xf081;</i></p>
+    </div>
+    <img src="{% static "last.jpg" %}" height="250px" width="250px" class="pos" >
+    <p class="bee">© 2024 Bundl Technologies Pvt. Ltd</p>
+    <div class="sem">
+        <h2>For better experience,download the Swiggy app now</h2>
+    </div>
+    <div class="APP">
+        <img src="{% static "app.jpg" %}" height="50px" width="250px"> 
+    </div>
+    <div class="goo">
+        <img src="{% static "google.jpg" %}" height="50px" width="250px">
+    </div>
+
+</footer>
+
+</body>
+</html>
